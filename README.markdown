@@ -1,3 +1,7 @@
+---
+title: Documentation
+layout: default
+---
 # What is it?
 
 Yokadi is a command-line oriented, SQLite powered, TODO list tool.  It helps
