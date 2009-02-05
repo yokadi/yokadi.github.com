@@ -3,14 +3,14 @@ layout: default
 title: Download
 version: "0.9"
 ---
-# Latest release
+## Latest release
 
 Latest release is v{{ page.version }}. Download it from here:
 
 - [yokadi-{{ page.version }}.zip][release-zip]
 - [yokadi-{{ page.version }}.tar.bz2][release-tar]
 
-# Development version
+## Development version
 
 Yokadi is hosted on [GitHub][]. You can download it in either [zip][master-zip]
 or [tar][master-tar] formats.
