@@ -1,8 +1,7 @@
 ---
-title: Documentation
+title: Coding style
 layout: default
 ---
-# Coding style
 
 ## Naming
 

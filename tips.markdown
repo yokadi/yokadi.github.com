@@ -1,8 +1,7 @@
 ---
-title: Documentation
+title: Intro
 layout: default
 ---
-# Intro
 
 This document presents practical advices on how to get the best out of Yokadi.
 

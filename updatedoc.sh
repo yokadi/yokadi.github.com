@@ -9,16 +9,18 @@ SRC_DIR=$HOME/src/yokadi/
 WWW_DIR=$HOME/src/yokadi-pages/
 DOC_FILE=$WWW_DIR/doc.markdown
 
-HEADER="---\ntitle: Documentation\nlayout: default\n---"
-
-echo $HEADER > $DOC_FILE
+echo "---\ntitle: Documentation\nlayout: default\n---" > $DOC_FILE
 
 for src in $SRC_DIR/README.markdown $SRC_DIR/doc/*.markdown ; do
-	name=$(basename $src)
-	dst=$WWW_DIR/$name
-	echo $HEADER > $dst
-	cat $src >> $dst
+    title=$(head --lines=1 $src | sed 's/^# *//')
 
-	title=$(echo $name | sed 's/\.markdown//')
-	echo "- [$title]($title.html)" >> $DOC_FILE
+    name=$(basename $src)
+    dst=$WWW_DIR/$name
+
+    echo "---\ntitle: $title\nlayout: default\n---" > $dst
+    tail --lines=+2 $src >> $dst
+
+    nameHtml=$(echo $name | sed 's/markdown$/html/')
+
+    echo "- [$title]($nameHtml)" >> $DOC_FILE
 done

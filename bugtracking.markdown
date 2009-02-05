@@ -1,8 +1,7 @@
 ---
-title: Documentation
+title: Using Yokadi as a bugtracker
 layout: default
 ---
-# Using Yokadi as a bugtracker
 
 ## Introduction
 
