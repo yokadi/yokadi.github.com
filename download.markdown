@@ -12,8 +12,8 @@ Latest release is v{{ page.version }}. Download it from here:
 
 ## Development version
 
-Yokadi is hosted on [GitHub][]. You can download it in either [zip][master-zip]
-or [tar][master-tar] formats.
+Yokadi is hosted [on GitHub][yokadi-github]. You can download it in either
+[zip][master-zip] or [tar][master-tar] formats.
 
 You can also clone the project with [git][] by running:
 
@@ -21,7 +21,7 @@ You can also clone the project with [git][] by running:
 
 [release-zip]: http://github.com/agateau/yokadi/zipball/{{ page.version }}
 [release-tar]: http://github.com/agateau/yokadi/tarball/{{ page.version }}
-[GitHub]: http://github.com
+[yokadi-github]: http://github.com/agateau/yokadi
 [master-zip]: http://github.com/agateau/yokadi/zipball/master
 [master-tar]: http://github.com/agateau/yokadi/tarball/master
 [git]: http://git-scm.com
