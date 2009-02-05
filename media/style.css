@@ -11,6 +11,8 @@ color: black;
 text-align: center;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 16px;
+background-image: url(header.png);
+background-repeat: repeat-x;
 }
 
 
@@ -64,11 +66,11 @@ letter-spacing: .1em;
 }
 
 #header {
-margin: 0 0 0 0;
+margin: 0;
 padding: 6px;
-background-color: #345;
+padding-top: 20px;
+/*background-color: #345;*/
 color: #888;
-border-bottom: 3px solid #888;
 }
 
 #header h1 {
