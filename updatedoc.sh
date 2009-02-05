@@ -8,10 +8,12 @@ set -e
 SRC_DIR=$HOME/src/yokadi/
 WWW_DIR=$HOME/src/yokadi-pages/
 DOC_FILE=$WWW_DIR/doc.markdown
+DOC_FILE_TMPL=$WWW_DIR/doc.markdown.tmpl
 
-echo "---\ntitle: Documentation\nlayout: default\n---" > $DOC_FILE
+cp $DOC_FILE_TMPL $DOC_FILE
 
-for src in $SRC_DIR/README.markdown $SRC_DIR/doc/*.markdown ; do
+for srcName in $(grep -o '[A-Za-z/]*\.markdown' $DOC_FILE_TMPL) ; do
+    src=$SRC_DIR/$srcName
     title=$(head --lines=1 $src | sed 's/^# *//')
 
     name=$(basename $src)
@@ -22,5 +24,5 @@ for src in $SRC_DIR/README.markdown $SRC_DIR/doc/*.markdown ; do
 
     nameHtml=$(echo $name | sed 's/markdown$/html/')
 
-    echo "- [$title]($nameHtml)" >> $DOC_FILE
+    sed -i "s|$srcName|[$title]($nameHtml)|" $DOC_FILE
 done
