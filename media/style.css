@@ -140,10 +140,12 @@ font-weight: bold;
 }
 
 pre {
-margin: 1em;
-padding: .5em;
+margin: 1em 0;
+padding: 4px;
 background-color: #666;
 color: white;
+border-left: 4px solid #345;
+border-right: 4px solid #345;
 }
 
 pre code {
