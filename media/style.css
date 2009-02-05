@@ -1,0 +1,150 @@
+/*******************************************************
+TITLE:  Fixed One-Column Layout (Basic) V1.1
+DATE:  20070824
+AUTHOR:  The CSS Tinderbox - http: //www.csstinderbox.com
+*******************************************************/
+
+body {
+height: 100%;
+background-color: white;
+color: black;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+}
+
+
+a {
+color: #345;
+text-decoration: none;
+border-bottom: 1px dotted #345;
+}
+
+a:hover {
+border-bottom: 1px solid #345;
+}
+
+p {
+margin: 6px 0;
+}
+
+blockquote {
+margin: 16px;
+padding: 8px;
+background-color: #eeeeee;
+border-top: 1px solid #cccccc;
+border-bottom: 1px solid #cccccc;
+}
+
+blockquote p {
+margin: .2em;
+}
+
+ul {
+list-style-type: disc;
+}
+
+li {
+margin: 0 0 0 25px;
+list-style-type: disc;
+}
+
+#page {
+margin: 0 auto;
+width: 800px;
+text-align: left;
+vertical-align: middle;
+}
+
+#page h2 {
+margin: 0 0 0 0;
+padding: 6px 0;
+font-size: 1.2em;
+letter-spacing: .1em;
+}
+
+#header {
+margin: 0 0 0 0;
+padding: 6px;
+background-color: #345;
+color: #888;
+border-bottom: 3px solid #888;
+}
+
+#header h1 {
+font-size: 1.7em;
+font-weight: bold;
+letter-spacing: .1em;
+color: white;
+}
+
+#header #subtitle {
+float: left;
+font-size: 1.1em;
+font-weight: lighter;
+letter-spacing: .1em;
+color: #ccc;
+}
+
+#header a {
+color: white;
+border: none;
+}
+
+#nav a:hover {
+border-bottom: 1px solid white;
+}
+
+#nav {
+text-align: right;
+}
+
+#content {
+padding: 6px;
+line-height: 1.5em;
+}
+
+#content h1 {
+margin: 1em 0;
+font-size: 1.8em;
+font-weight: bold;
+}
+
+#content h2 {
+margin-top: 1em;
+font-size: 1.2em;
+font-weight: bold;
+}
+
+#content h3 {
+margin-top: 1em;
+font-size: 1.1em;
+}
+
+#footer {
+position: relative;
+bottom: 0;
+margin: 80px 0 0 0;
+padding: 6px;
+text-align: center;
+font-size: .7em;
+background-color: white;
+border-top: 1px solid #bbb;
+}
+
+code {
+font-family: monospace;
+font-size: .8em;
+font-weight: bold;
+}
+
+pre {
+margin: 1em;
+padding: .5em;
+background-color: #666;
+color: white;
+}
+
+pre code {
+font-weight: normal;
+}
