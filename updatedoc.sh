@@ -5,8 +5,14 @@ set -e
 # branch.
 
 # FIXME: do not hardcode paths!
-SRC_DIR=$HOME/src/yokadi/
-WWW_DIR=$HOME/src/yokadi-pages/
+if [ $# -ne 2 ] ; then
+    echo "Usage: $(basename $0) <path/to/yokadi/checkout> <path/to/yokadi.github.com/checkout>"
+    exit 1
+fi
+
+SRC_DIR=$1
+WWW_DIR=$2
+
 DOC_FILE=$WWW_DIR/doc.markdown
 DOC_FILE_TMPL=$WWW_DIR/doc.markdown.tmpl
 
@@ -26,3 +32,5 @@ for srcName in $(grep -o '[A-Za-z/]*\.markdown' $DOC_FILE_TMPL) ; do
 
     sed -i "s|$srcName|[$title]($nameHtml)|" $DOC_FILE
 done
+
+# vim: set ts=4 sw=4 et:
