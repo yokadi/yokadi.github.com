@@ -1,7 +1,9 @@
 ---
-title: What is it?
+title: README
 layout: default
 ---
+
+## What is it?
 
 Yokadi is a command-line oriented, SQLite powered, TODO list tool.  It helps
 you organize all the things you have to do and you must not forget. It aims to
@@ -11,14 +13,15 @@ In Yokadi you manage projects, which contains tasks. At the minimum, a task has
 a title, but it can also have a description, a due date, an urgency or
 keywords. Keywords can be any word that help you to find and sort your tasks.
 
-# Dependencies
+## Dependencies
 
-- Unix or Linux system. MacOSX and Windows should work but have not been tested.
-- Python 2.4 or higher
-- Sqlite module (included in Python since 2.5 release)
-- SQLObject 0.9 or 0.10
+- Unix or Linux system. Mac OS X and Windows should work but have not been
+  tested yet.
+- Python 2.4 or higher.
+- Sqlite module (included in Python since 2.5 release).
+- SQLObject 0.9 or higher.
 
-# Quickstart
+## Quickstart
 
 Here is an example of a short Yokadi session:
 
@@ -128,9 +131,9 @@ started. You can get a list of all commands by typing `help` and get the
 detailed documentation of a command with `help <command>`.
 
 
-# Integration
+## Integration
 
-## Database location
+### Database location
 
 By default, Yokadi creates a database in `$HOME/.yokadi.db`, but you can
 specify an alternative location with the `--db` option.
@@ -143,7 +146,7 @@ like this:
 The single letter `y` will start Yokadi with your favorite database from
 wherever you are.
 
-## Yokadid, the Yokadid daemon
+### Yokadid, the Yokadid daemon
 
 If you want to be automatically reminded of due tasks, you can use the Yokadi
 daemon.
@@ -154,7 +157,7 @@ must create a shell script in `$HOME/.kde/Autostart/`. Sample script:
     /home/me/yokadi/yokadid.py --db /home/me/work/yokadi.db
 
 
-# Contact
+## Contact
 
 The project is hosted on http://yokadi.github.com.
 
@@ -163,7 +166,7 @@ Sequanux LUG. To join, visit
 <http://sequanux.org/cgi-bin/mailman/listinfo/ml-yokadi>.
 
 
-# Authors
+## Authors
 
 Yokadi has been brought to you by:
 
@@ -171,3 +174,4 @@ Yokadi has been brought to you by:
 - Sébastien Renard <sebastien.renard@digitalfox.org>: Developer
 
 <!-- vim: set ts=4 sw=4 et: -->
+

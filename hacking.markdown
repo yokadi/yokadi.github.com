@@ -1,9 +1,11 @@
 ---
-title: Coding style
+title: Hacking on Yokadi
 layout: default
 ---
 
-## Naming
+## Coding style
+
+### Naming
 
 Classes use CamelCase. Functions use mixedCase. Here is an example:
 
@@ -38,7 +40,7 @@ the class they contain.
 
 Internal functions and methods should be prefixed with `_`.
 
-## Spacing
+### Spacing
 
 Indentation is 4 spaces.
 
@@ -52,7 +54,7 @@ One space before and after operators, except in optional arguments.
 
     myFunction(a, verbose=True)
 
-## Import
+### Import
 
 Use one import per line:
 
@@ -84,7 +86,7 @@ Keep import in blocks, in this order:
 Keep import blocks sorted. It makes it easier to check if an import line is
 already there.
 
-# Command docstrings
+## Command docstrings
 
 All commands are documented either through their parser or using the command
 docstring. To ensure consistency all usage string should follow the same
@@ -99,7 +101,7 @@ filename argument. The usage string should look like this:
 No need to detail the options in the usage string, they will be listed by the
 parser below the usage string.
 
-# Database schema changes
+## Database schema changes
 
 If you want to modify the database schema (adding, removing, changing tables or
 fields). You should:
@@ -118,3 +120,4 @@ fields). You should:
   create a database version x and test your update script.
 
 <!-- vim: set ts=4 sw=4 et: -->
+

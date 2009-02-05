@@ -2,7 +2,11 @@
 title: Documentation
 layout: default
 ---
-- [What is it?](README.html)
-- [Intro](tips.html)
+
+## User documentation
+- [README](README.html)
+- [Tips](tips.html)
 - [Using Yokadi as a bugtracker](bugtracking.html)
-- [Coding style](hacking.html)
+
+## Developer documentation
+- [Hacking on Yokadi](hacking.html)
