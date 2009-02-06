@@ -1,26 +1,24 @@
 ---
 layout: default
 title: Download
-version: "0.9"
+version: "0.9.0"
 ---
 ## Latest release
 
 Latest release is v{{ page.version }}. Download it from here:
 
-- [yokadi-{{ page.version }}.zip][release-zip]
-- [yokadi-{{ page.version }}.tar.bz2][release-tar]
+- [yokadi-{{ page.version }}.tar.bz2](download/yokadi-{{ page.version }}.tar.bz2)
+- [yokadi-{{ page.version }}.zip](download/yokadi-{{ page.version }}.zip)
 
 ## Development version
 
 Yokadi is hosted [on GitHub][yokadi-github]. You can download it in either
-[zip][master-zip] or [tar][master-tar] formats.
+[tar][master-tar] or [zip][master-zip] formats.
 
 You can also clone the project with [git][] by running:
 
     git clone git://github.com/agateau/yokadi
 
-[release-zip]: http://github.com/agateau/yokadi/zipball/{{ page.version }}
-[release-tar]: http://github.com/agateau/yokadi/tarball/{{ page.version }}
 [yokadi-github]: http://github.com/agateau/yokadi
 [master-zip]: http://github.com/agateau/yokadi/zipball/master
 [master-tar]: http://github.com/agateau/yokadi/tarball/master
