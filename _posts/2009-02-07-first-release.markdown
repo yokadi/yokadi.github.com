@@ -18,8 +18,7 @@ satisfied me:
   fast enough work-flow and I failed to adopt them.
 
 Yokadi was not initially created to be used by anyone else but me, but when I
-showed it to a few friends, they adopted it, and even started to contribute to
-it.
+showed it to a few friends, they adopted it and even started to improve it.
 
 So here we are, 0.9.0 is out for your organizing pleasure. We have been using
 it and relying on it daily for a few months now and consider it to be stable.
