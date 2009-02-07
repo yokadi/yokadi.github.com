@@ -17,8 +17,8 @@ satisfied me:
 - A few others were GUI solutions. While attractive, they did not provide a
   fast enough work-flow and I failed to adopt them.
 
-Yokadi was not initially created to be used by anyone else than me, but I
-showed it to a few friends, who adopted it, and even started to contribute to
+Yokadi was not initially created to be used by anyone else but me, but when I
+showed it to a few friends, they adopted it, and even started to contribute to
 it.
 
 So here we are, 0.9.0 is out for your organizing pleasure. We have been using
