@@ -6,6 +6,9 @@ layout: default
 <h1>News</h1>
 
 {% for post in site.posts %}
-    <h2><span>{{ post.date | date_to_string }}</span> - {{ post.title }}</h2>
-    {{ post.content }}
+    <div class="post">
+        <h2><span>{{ post.date | date_to_string }}</span> - {{ post.title }}</h2>
+        <div class="author">By {{ post.author }}</div>
+        {{ post.content }}
+    </div>
 {% endfor %}
