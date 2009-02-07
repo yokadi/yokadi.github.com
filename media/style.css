@@ -153,5 +153,6 @@ font-weight: normal;
 }
 
 .post .author {
-font-size: 80%;
+font-size: 60%;
+font-style: italic;
 }
