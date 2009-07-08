@@ -130,6 +130,27 @@ There is much more, we only scratched the surface, but this should get you
 started. You can get a list of all commands by typing `help` and get the
 detailed documentation of a command with `help <command>`.
 
+## Advanced stuff
+
+You can define due date for your tasks with t_due. This can be done with a relative or absolute date:
+
+    yokadi> t_due 21 +3d
+    Due date for task 'Buy chocolate' set to Sat Jul 11 17:16:20 2009
+
+    yokadi> t_due 21 23/07 10:30
+    Due date for task 'Buy chocolate' set to Thu Jul 23 10:30:00 2009
+
+Due dates are show by t_list. Due date is colored according to time left. If you want to be reminded when a task
+is due, you can use the Yokadi Daemon for that. See below for details.
+
+If you have periodic tasks, you can tell it to yokadi with t_recurs:
+    yokadi>t_recurs 1 weekly monday 21:30
+    yokadi>t_recurs 1 monthly 3 11:00
+    yokadi>t_recurs 1 monthly last saturday 11:00
+    yokadi>t_recurs 1 yearly 23/2 14:00
+
+Type 'help t_recurs' to see all possible syntax
+
 
 ## Integration
 
@@ -141,7 +162,7 @@ specify an alternative location with the `--db` option.
 A convenient way to start yokadi is by creating an alias in your `.bashrc` file
 like this:
 
-    alias y='/home/me/yokadi/yokadi.py --db /home/me/work/yokadi.db'
+    alias y=yokadi
 
 The single letter `y` will start Yokadi with your favorite database from
 wherever you are.
@@ -152,10 +173,9 @@ If you want to be automatically reminded of due tasks, you can use the Yokadi
 daemon.
 
 The Yokadi daemon can be launched via desktop autostart services. In KDE, you
-must create a shell script in `$HOME/.kde/Autostart/`. Sample script:
+must create a symlink to yokadid (or a shell script that calls it) in `$HOME/.kde/Autostart/`.
 
-    /home/me/yokadi/yokadid.py --db /home/me/work/yokadi.db
-
+    ln -s `which yokadid` $HOME/.kde/Autostart/
 
 ## Contact
 
@@ -170,8 +190,13 @@ Sequanux LUG. To join, visit
 
 Yokadi has been brought to you by:
 
-- Aurélien Gâteau <aurelien.gateau@free.fr>: Developer, funder
+- Aurélien Gâteau <aurelien.gateau@free.fr>: Developer, founder
 - Sébastien Renard <sebastien.renard@digitalfox.org>: Developer
+
+Other people contributed to Yokadi:
+
+- Olivier Hervieu <olivier.hervieu@wallix.com>: first working setup.py release
+- Marc-Antoine Gouillart <marsu_pilami@msn.com>: Windows port
 
 <!-- vim: set ts=4 sw=4 et: -->
 
