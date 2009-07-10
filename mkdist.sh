@@ -44,7 +44,7 @@ tar xf $YOKADI_TARBZ2
 
 log "Running tests"
 cd ${YOKADI_TARBZ2%.tar.bz2}
-python tests/tests.py
+python src/yokadi/tests/tests.py
 
 log "Moving archives out of work dir"
 cd $WORK_DIR/dist
