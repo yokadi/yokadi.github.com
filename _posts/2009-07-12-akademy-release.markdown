@@ -8,9 +8,9 @@ guys that were using text based tool to manages their tasks!
 So we decided to make an 'Akademy' release. Here's the highlights:
 - ability to assign keywords to a project
 - shortened some commands (old ones still available but deprecated):
-        o t_set_due => t_due
-        o t_set_project => t_project
-        o t_set_urgency => t_urgency
+	- t_set_due => t_due
+        - t_set_project => t_project
+        - t_set_urgency => t_urgency
 - changed keyword syntax: use @foo instead of -k foo
 - added t_recurs command to define task recursion (weekly, monthly, yearly...)
 - added full text search with t_list -s foo
