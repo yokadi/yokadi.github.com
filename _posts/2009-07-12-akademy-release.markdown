@@ -3,9 +3,9 @@ title: Second release of Yokadi is out!
 author: Sebastien
 ---
 During the [Gran Canaria Desktop Summit](http://www.grancanariadesktopsummit.org/), there were a conspiracy of some
-guys who were using text based tool to manages their tasks!
+guys who were using text based tool to manage their tasks!
 
-So we decided to make an 'Akademy' release. Here are the highlights:
+So we decided to make an `Akademy` release. Here are the highlights:
 - Ability to assign keywords to a project.
 - Shortened some commands (old ones are still available but are considered deprecated):
 
