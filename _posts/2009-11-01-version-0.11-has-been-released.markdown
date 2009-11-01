@@ -1,0 +1,29 @@
+---
+title: Version 0.11 has been released!
+author: Aurélien
+---
+Here it is, a new release of Yokadi for your TODO listing pleasure! Version
+0.11 brings you a much nicer t\_list output:
+
+- The width of the title column now adjusts itself to fit your terminal width and
+  the content to display.
+- Task keywords are now printed in the title column.
+- Using the new -k switch, you can group tasks by keywords instead of grouping
+  them by project.
+
+0\.11 also brings you a few handy shortcuts:
+
+- Special character '\_' can be used to represent last task id in all task
+  commands: handy to add a due date after adding a task: just type "t\_due \_
+  tomorrow" to set the last used task due date to tomorrow.
+- Custom aliases can be defined for all commands with a\_add.
+
+Other changes:
+
+- Bugs keywords are prefixed with a '\_' to distinguish them from user
+  keywords.
+- YOKADI_DB environment variable can be defined to set default yokadi database
+  path.
+- Switch from "GPL v3" to "GPL v3 or newer" license.
+
+[Get it now!](download.html)
