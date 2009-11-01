@@ -132,7 +132,21 @@ detailed documentation of a command with `help <command>`.
 
 ## Advanced stuff
 
-You can define due date for your tasks with `t_due`. This can be done with a relative or absolute date:
+### Quick access to last task
+
+When you execute multiple commands on the same task, you can use `_` as a shortcut to the last task id. Assuming you created a task like this:
+
+    yokadi> t_add home Buy chocolate
+    Added task 'Buy chocolate' (id=1069)
+
+Then the following commands are equivalents (until you work on another task):
+
+    yokadi> t_edit 1069
+    yokadi> t_edit _
+
+### Due dates
+
+You can define due dates for your tasks with `t_due`. This can be done with a relative or absolute date:
 
     yokadi> t_due 21 +3d
     Due date for task 'Buy chocolate' set to Sat Jul 11 17:16:20 2009
@@ -140,8 +154,10 @@ You can define due date for your tasks with `t_due`. This can be done with a rel
     yokadi> t_due 21 23/07 10:30
     Due date for task 'Buy chocolate' set to Thu Jul 23 10:30:00 2009
 
-Due dates are show by `t_list`. Due date is colored according to time left. If you want to be reminded when a task
+Due dates are shown by `t_list`. Due date is colored according to time left. If you want to be reminded when a task
 is due, you can use the Yokadi Daemon for that. See below for details.
+
+### Periodic tasks
 
 If you have periodic tasks, you can tell it to yokadi with `t_recurs`:
 
@@ -151,7 +167,6 @@ If you have periodic tasks, you can tell it to yokadi with `t_recurs`:
     yokadi>t_recurs 1 yearly 23/2 14:00
 
 Type `help t_recurs` to see all possible syntax
-
 
 ## Integration
 
@@ -167,6 +182,11 @@ like this:
 
 The single letter `y` will start Yokadi with your favorite database from
 wherever you are.
+
+If you do not want to use default database location, you can define
+the `YOKADI_DB` env variable to point to your database:
+
+    export YOKADI_DB=$HOME/work/yokadi.db
 
 ### Yokadid, the Yokadid daemon
 
@@ -198,6 +218,8 @@ Other people contributed to Yokadi:
 
 - Olivier Hervieu <olivier.hervieu@wallix.com>: first working setup.py release
 - Marc-Antoine Gouillart <marsu_pilami@msn.com>: Windows port
+- Kartik Mistry <kartik@debian.org>: man pages
+- Jonas Christian Drewsen <jdrewsen@gmail.com>: quarterly recurrence feature
 
 <!-- vim: set ts=4 sw=4 et: -->
 
