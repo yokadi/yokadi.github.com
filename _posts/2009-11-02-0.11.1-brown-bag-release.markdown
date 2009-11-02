@@ -1,0 +1,7 @@
+---
+title: 0.11.1, a brown bag release
+author: Aurélien
+---
+It turned out I broke the ability to run Yokadi without installing it in
+0.11.0: the 'yokadi' symbolic link got turned into a regular file. [0.11.1 is
+here](download.html) to fix this.
