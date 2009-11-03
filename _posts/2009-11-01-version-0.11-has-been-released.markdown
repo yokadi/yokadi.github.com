@@ -1,5 +1,6 @@
 ---
 title: Version 0.11 has been released!
+layout: post
 author: Aurélien
 ---
 Here it is, a new release of Yokadi for your TODO listing pleasure! Version
@@ -22,8 +23,8 @@ Other changes:
 
 - Bugs keywords are prefixed with a '\_' to distinguish them from user
   keywords.
-- YOKADI_DB environment variable can be defined to set default yokadi database
+- YOKADI\_DB environment variable can be defined to set default yokadi database
   path.
 - Switch from "GPL v3" to "GPL v3 or newer" license.
 
-[Get it now!](download.html)
+[Get it now!](/download.html)

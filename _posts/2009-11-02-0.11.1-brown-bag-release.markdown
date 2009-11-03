@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 0.11.1, a brown bag release
 author: Aurélien
 ---

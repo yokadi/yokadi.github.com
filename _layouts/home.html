@@ -7,7 +7,7 @@ layout: default
 
 {% for post in site.posts %}
     <div class="post">
-        <h2><span>{{ post.date | date_to_string }}</span> - {{ post.title }}</h2>
+        <h2><a href="{{post.url}}"></span>{{ post.date | date_to_string }}</span> - {{ post.title }}</a></h2>
         <div class="author">By {{ post.author }}</div>
         {{ post.content }}
     </div>

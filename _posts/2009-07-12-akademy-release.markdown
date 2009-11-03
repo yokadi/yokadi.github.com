@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Second release of Yokadi is out!
 author: Sebastien
 ---
@@ -24,5 +25,5 @@ So we decided to make an `Akademy` release. Here are the highlights:
 We focused on adding new features while keeping the software easy to use and easy
 to maintain. We hope you like it as much as we do.
 
-[Grab it](download.html), have a look at the [README](README.html)
-and start getting organized! Should anything go wrong, [let us know](contact.html).
+[Grab it](/download.html), have a look at the [README](/README.html)
+and start getting organized! Should anything go wrong, [let us know](/contact.html).

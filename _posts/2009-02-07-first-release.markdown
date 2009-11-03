@@ -1,4 +1,5 @@
 ---
+layout: post
 title: First release of Yokadi is out!
 author: Aurélien
 ---
@@ -25,5 +26,5 @@ it and relying on it daily for a few months now and consider it to be stable.
 Still this is the first public release, you may find rough edges here and
 there.
 
-Enough talk: [grab it](download.html), have a look at the [README](README.html)
-and start getting organized! Should anything go wrong, [let us know](contact.html).
+Enough talk: [grab it](/download.html), have a look at the [README](/README.html)
+and start getting organized! Should anything go wrong, [let us know](/contact.html).
