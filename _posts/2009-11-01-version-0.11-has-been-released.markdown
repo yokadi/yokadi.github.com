@@ -1,10 +1,10 @@
 ---
-title: Version 0.11 has been released!
 layout: post
+title: Version 0.11.0 has been released!
 author: Aurélien
 ---
 Here it is, a new release of Yokadi for your TODO listing pleasure! Version
-0.11 brings you a much nicer t\_list output:
+0.11.0 brings you a much nicer t\_list output:
 
 - The width of the title column now adjusts itself to fit your terminal width and
   the content to display.
@@ -12,7 +12,7 @@ Here it is, a new release of Yokadi for your TODO listing pleasure! Version
 - Using the new -k switch, you can group tasks by keywords instead of grouping
   them by project.
 
-0\.11 also brings you a few handy shortcuts:
+0\.11.0 also brings you a few handy shortcuts:
 
 - Special character '\_' can be used to represent last task id in all task
   commands: handy to add a due date after adding a task: just type "t\_due \_
