@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Download
-version: "0.11.1"
+version: "0.11.2"
 ---
 ## Latest release
 
@@ -20,7 +20,7 @@ Latest release is v{{ page.version }}. Download it from here:
 - [Arch Linux][arch]
 - [Frugalware][frugal]
 - [OpenBSD][openbsd]
-- [Windows](/download/yokadi-0.11.1.win32.exe)
+- [Windows](/download/yokadi-0.11.2.win32.exe)
 
 
 ## Development version

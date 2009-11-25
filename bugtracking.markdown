@@ -77,7 +77,7 @@ be associated with an integer value).
 The bug urgency is computed from likelihood and severity, then stored in the
 task urgency field. Yes, this means there is duplication and you may get
 likelihood/severity and urgency out of sync if you manually adjust urgency with
-`t_urgency`. In practice, I found it was not a problem.
+`t_set_urgency`. In practice, I found it was not a problem.
 
 ## Tricks
 

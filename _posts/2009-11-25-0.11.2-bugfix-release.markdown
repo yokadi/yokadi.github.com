@@ -1,0 +1,6 @@
+---
+layout: post
+title: 0.11.2, bugfix release
+author: Sébastien
+---
+A small glitch has been found in bug_edit function. The [0.11.2 release](download.html) fix that.
