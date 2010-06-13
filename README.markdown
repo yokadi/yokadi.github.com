@@ -161,10 +161,10 @@ is due, you can use the Yokadi Daemon for that. See below for details.
 
 If you have periodic tasks, you can tell it to yokadi with `t_recurs`:
 
-    yokadi>t_recurs 1 weekly monday 21:30
-    yokadi>t_recurs 1 monthly 3 11:00
-    yokadi>t_recurs 1 monthly last saturday 11:00
-    yokadi>t_recurs 1 yearly 23/2 14:00
+    yokadi> t_recurs 1 weekly monday 21:30
+    yokadi> t_recurs 1 monthly 3 11:00
+    yokadi> t_recurs 1 monthly last saturday 11:00
+    yokadi> t_recurs 1 yearly 23/2 14:00
 
 Type `help t_recurs` to see all possible syntax
 
@@ -183,10 +183,20 @@ like this:
 The single letter `y` will start Yokadi with your favorite database from
 wherever you are.
 
-If you do not want to use default database location, you can define
+If you do not want to use the default database location, you can define
 the `YOKADI_DB` env variable to point to your database:
 
     export YOKADI_DB=$HOME/work/yokadi.db
+
+### History location
+
+By default, Yokadi will store input history in `$HOME/.yokadi_history`. This file
+stores commands used in Yokadi for future use and reference.
+
+If you do now want to use the default history file location, you can define
+the `YOKADI_HISTORY` env variable to point to your history file:
+
+    export YOKADI_HISTORY=$HOME/.hist/yokadi_history
 
 ### Yokadid, the Yokadid daemon
 
@@ -206,6 +216,7 @@ All discussion happens on Yokadi mailing-list, hosted by our friends from the
 Sequanux LUG. To join, visit
 <http://sequanux.org/cgi-bin/mailman/listinfo/ml-yokadi>.
 
+You can also find some of us on #yokadi, on the Freenode IRC network.
 
 ## Authors
 
