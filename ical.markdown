@@ -6,7 +6,7 @@ layout: default
 ## Intro
 
 This document presents how to use Yokadi with a third party calendar/todolist
-application that support the ical format (RFC2345).
+application that support the ical format (RFC2445).
 
 To use ical Yokadi features, you have to start the Yokadi daemon. That daemon
 also managed alarms for due tasks. 
