@@ -39,7 +39,7 @@ are planning a trip to the store, get the list of what to buy with:
 
 Or even nicer, directly print your list (from the shell):
 
-    yokadi t_list @diy_store --format plain | lp
+    yokadi "t_list @diy_store --format plain" | lp
 
 ## Keep track of your meetings
 
