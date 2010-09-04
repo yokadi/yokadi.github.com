@@ -61,5 +61,17 @@ To check all task that Bob should have done:
 
     t_list --overdue @bob
 
+## Some usefull shortcuts
+
+Yokadi rely on readline library, so you can use very useful readline shortcut
+such as:
+- up/down arrows to browse history 
+- ctrl-r to search backward in yokadi history
+- ctrl-l to clear the screen
+- ctrl-t to swap two letters
+- ctrl-a to go the begin of the line
+- ctrl-e to go the end of the line
+- ctrl-w delete last word
+
 <!-- vim: set ts=4 sw=4 et: -->
 
