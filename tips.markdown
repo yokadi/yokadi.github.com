@@ -61,9 +61,9 @@ To check all task that Bob should have done:
 
     t_list --overdue @bob
 
-## Some usefull shortcuts
+## Some useful shortcuts
 
-Yokadi rely on readline library, so you can use very useful readline shortcut
+Yokadi rely on readline library, so you can use very useful readline shortcuts
 such as:
 - up/down arrows to browse history 
 - ctrl-r to search backward in yokadi history
