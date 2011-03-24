@@ -16,7 +16,6 @@ Latest release is v{{ page.version }}. Download it from here:
 - [Ubuntu][ubuntu]
 - [Slackware][slackware]
 - [Fedora][rpmfind]
-- [SuSe][suse]
 - [Arch Linux][arch]
 - [Frugalware][frugal]
 - [OpenBSD][openbsd]
@@ -43,4 +42,3 @@ You can also clone the project with [git][] by running:
 [arch]: http://aur.archlinux.org/packages.php?ID=23998
 [frugal]: http://frugalware.org/packages/64105
 [slackware]: http://github.com/pprkut/slackbuilds-beta/tree/master/good/yokadi/
-[suse]: http://download.opensuse.org/repositories/home:/bitshuffler/openSUSE_11.2/noarch/yokadi-0.11.1-1.1.noarch.rpm
