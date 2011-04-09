@@ -168,6 +168,71 @@ If you have periodic tasks, you can tell it to yokadi with `t_recurs`:
 
 Type `help t_recurs` to see all possible syntax
 
+### Encrypt your tasks
+
+Whenever you want to protect your todo list data, yokadi provide a simple mechanism
+to encrypt a task title or description. This is usefull when you store passwords like tasks
+or notes. 
+
+Let's encrypt a task and a note title with the -c option:
+
+    yokadi> t_add -c my_project this is a very secret task, don't tell anyone !
+    passphrase>
+    Added task '<... encrypted data...>' (id=1)
+
+Yokadi ask you for a passphrase. Don't forget it! It is a global passphrase for this yokadi database.
+Each time you will want to encrypt something, you will have to use this passphrase. For convenience, Yokadi
+will keep this passphrase in memory during your yokadi session. If you are quite paranoiac and feel bad with that,
+don't panic, you can set the PASSPHRASE_CACHE option to 0 to disable passphrase cache:
+
+    yokadi> c_set PASSPHRASE_CACHE 0
+    Info: Parameter updated
+
+If you list encrypted stuff but have still give your passphrase in the current session, yokadi won't bother you with asking
+for passphrase, but won't data in a clear way:
+
+    yokadi> t_list
+                                 my_project                             
+    ID|Title                  |U  |S|Age     |Due date                  
+    --------------------------------------------------------------------
+    1 |<... encrypted data...>|0  |N|5m      |                          
+    yokadi> 
+
+To reveal secret data, you have to use the --decrypt option and type your passphrase when prompted to:
+
+    yokadi> t_list --decrypt
+    passphrase> 
+                                             my_project                                         
+    ID|Title                                          |U  |S|Age     |Due date                  
+    --------------------------------------------------------------------------------------------
+    1 |this is a very secret task, don't tell anyone !|0  |N|6m      |                          
+    yokadi> 
+
+Note: when you encrypt a task or note title, the description will be also encrypted. 
+
+### Tasks range and magic __ keyword
+
+t_apply is a very function but sometimes you have to use it on numerous tasks. First, you can use task range like this:
+
+    yokadi> t_apply 1-3 t_urgency 10
+    Executing: t_urgency 1 10
+    Executing: t_urgency 2 10
+    Executing: t_urgency 3 10
+    yokadi> 
+
+But sometimes tasks are not consecutive and you would like to use wonderful t_list options to select your tasks.
+Here's the trick: each time you display tasks with t_list, yokadi store the id list in the magic keywod __ that you can
+give to t_apply like this:
+
+    yokadi> t_list @keyword myProject
+    (...)
+    yokadi> t_apply __ t_urgency 35
+
+Oh, by the way, some yokadi dev use the followings alias which is quite self explicit :
+
+    yokadi> a_list
+    procrastinate => t_apply __ t_due +1d
+
 ## Integration
 
 ### Database location
