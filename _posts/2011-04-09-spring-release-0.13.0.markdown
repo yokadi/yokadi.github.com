@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring: time to release 0.13.0!
+title: Spring, time to release 0.13.0!
 author: Sebastien
 ---
 The sun is shining, it's time to release new yokadi stuff!
