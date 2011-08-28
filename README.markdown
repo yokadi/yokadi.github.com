@@ -19,7 +19,7 @@ keywords. Keywords can be any word that help you to find and sort your tasks.
   tested yet.
 - Python 2.4 or higher.
 - Sqlite module (included in Python since 2.5 release).
-- iCalendar module (optionnal, for Yokadi Daemon only)
+- iCalendar module (optional , for Yokadi Daemon only)
 - SQLObject 0.9 or higher.
 
 ## Quickstart
@@ -172,7 +172,7 @@ Type `help t_recurs` to see all possible syntax
 ### Encrypt your tasks
 
 Whenever you want to protect your todo list data, yokadi provide a simple mechanism
-to encrypt a task title or description. This is usefull when you store passwords like tasks
+to encrypt a task title or description. This is useful  when you store passwords like tasks
 or notes. 
 
 Let's encrypt a task and a note title with the -c option:
