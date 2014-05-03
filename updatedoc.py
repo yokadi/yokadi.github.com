@@ -3,6 +3,10 @@ import os
 import re
 import sys
 
+"""
+Update local markdown files from Yokadi README.markdown and files in the doc/
+directory.
+"""
 
 gTitleRe = re.compile("^#", re.MULTILINE)
 def copyDoc(title, src, dstDir):
