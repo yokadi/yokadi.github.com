@@ -15,7 +15,6 @@ background-image: url(header.png);
 background-repeat: repeat-x;
 }
 
-
 a {
 color: #345;
 text-decoration: none;
@@ -65,6 +64,26 @@ font-size: 1.2em;
 letter-spacing: .1em;
 }
 
+code {
+font-family: monospace;
+font-size: .8em;
+font-weight: bold;
+}
+
+pre {
+margin: 1em 0;
+padding: 4px;
+background-color: #666;
+color: white;
+border-left: 4px solid #345;
+border-right: 4px solid #345;
+}
+
+pre code {
+font-weight: normal;
+}
+
+/* Header */
 #header {
 margin: 0;
 padding: 6px;
@@ -81,10 +100,14 @@ color: white;
 
 #header #subtitle {
 float: left;
-font-size: 1.1em;
 font-weight: lighter;
 letter-spacing: .1em;
 color: #ccc;
+}
+
+#icon {
+float: left;
+margin-right: 12px;
 }
 
 #header a {
@@ -100,6 +123,7 @@ border-bottom: 1px solid white;
 text-align: right;
 }
 
+/* Content */
 #content {
 padding: 6px;
 line-height: 1.5em;
@@ -122,6 +146,7 @@ margin-top: 1em;
 font-size: 1.1em;
 }
 
+/* Footer */
 #footer {
 position: relative;
 bottom: 0;
@@ -133,25 +158,7 @@ background-color: white;
 border-top: 1px solid #bbb;
 }
 
-code {
-font-family: monospace;
-font-size: .8em;
-font-weight: bold;
-}
-
-pre {
-margin: 1em 0;
-padding: 4px;
-background-color: #666;
-color: white;
-border-left: 4px solid #345;
-border-right: 4px solid #345;
-}
-
-pre code {
-font-weight: normal;
-}
-
+/* Posts */
 .post .author {
 font-size: 60%;
 font-style: italic;
