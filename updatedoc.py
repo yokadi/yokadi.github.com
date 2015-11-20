@@ -4,7 +4,7 @@ import re
 import sys
 
 """
-Update local markdown files from Yokadi README.markdown and files in the doc/
+Update local Markdown files from Yokadi README.md and files in the doc/
 directory.
 """
 
@@ -32,7 +32,7 @@ def main():
 
     srcDir = sys.argv[1]
     wwwDir = sys.argv[2]
-    docFileTmpl = os.path.join(wwwDir, "doc.markdown.tmpl")
+    docFileTmpl = os.path.join(wwwDir, "doc.md.tmpl")
 
     dstDoc = open(docFileTmpl.replace(".tmpl", ""), "w")
 
@@ -43,7 +43,7 @@ def main():
         if result:
             title, fileName = result.groups(0)
             copyDoc(title, os.path.join(srcDir, fileName), wwwDir)
-            htmlFileName = os.path.basename(fileName).replace(".markdown", ".html")
+            htmlFileName = os.path.basename(fileName).replace(".md", ".html")
             line = line.replace(fileName, htmlFileName)
 
         dstDoc.write(line)
