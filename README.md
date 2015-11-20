@@ -4,6 +4,7 @@ layout: default
 ---
 
 [![Build Status](https://travis-ci.org/agateau/yokadi.png?branch=master)](https://travis-ci.org/agateau/yokadi)
+[![Coverage Status](https://coveralls.io/repos/agateau/yokadi/badge.png)](https://coveralls.io/r/agateau/yokadi)
 
 ## What is it?
 
@@ -19,11 +20,10 @@ keywords. Keywords can be any word that help you to find and sort your tasks.
 
 - Unix or Linux system. Mac OS X and Windows should work but have not been
   tested yet.
-- Python 2.6 or higher.
-- Sqlite module (included in Python since 2.5 release).
+- Python 3.4.
 - iCalendar module (optional, for Yokadi Daemon only)
 - setproctitle module (optional, for Yokadi Daemon only)
-- SQLObject 0.9 or higher.
+- SQLAlchemy 0.9.X.
 
 ## Quickstart
 
