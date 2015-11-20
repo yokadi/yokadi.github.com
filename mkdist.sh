@@ -35,7 +35,7 @@ git reset --hard HEAD
 git clean -q -dxf
 
 log "Building archives"
-python setup.py -q sdist --formats=bztar,zip
+./setup.py -q sdist --formats=bztar,zip
 
 log "Unpacking .tar.bz2"
 cd dist/
@@ -44,7 +44,7 @@ tar xf $YOKADI_TARBZ2
 
 log "Running tests"
 cd ${YOKADI_TARBZ2%.tar.bz2}
-python yokadi/tests/tests.py
+yokadi/tests/tests.py
 
 log "Moving archives out of work dir"
 cd $WORK_DIR/dist
