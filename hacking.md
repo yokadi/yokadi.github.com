@@ -125,4 +125,3 @@ fields). You should:
         git push --tags
 
 <!-- vim: set ts=4 sw=4 et: -->
-

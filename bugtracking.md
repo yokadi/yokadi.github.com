@@ -97,4 +97,3 @@ Here are a few tricks I came up with while using Yokadi to do bug tracking:
   development. For example I have `yokadi_stable` and `yokadi_dev`.
 
 <!-- vim: set ts=4 sw=4 et: -->
-
