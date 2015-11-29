@@ -19,8 +19,6 @@ Latest release is v{{ page.version }}. Download it from here:
 - [Arch Linux][arch]
 - [Frugalware][frugal]
 - [OpenBSD][openbsd]
-- [Windows](/download/yokadi-0.13.0.win32.exe)
-
 
 ## Development version
 
