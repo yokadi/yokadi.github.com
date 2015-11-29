@@ -11,8 +11,7 @@ color: black;
 text-align: center;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 16px;
-background-image: url(header.png);
-background-repeat: repeat-x;
+background-color: #eee;
 }
 
 a {
@@ -86,9 +85,9 @@ font-weight: normal;
 /* Header */
 #header {
 margin: 0;
-padding: 6px;
-padding-top: 20px;
+padding: 20px;
 color: #888;
+background-color: #004475;
 }
 
 #header h1 {
@@ -125,8 +124,9 @@ text-align: right;
 
 /* Content */
 #content {
-padding: 6px;
+padding: 20px;
 line-height: 1.5em;
+background-color: white;
 }
 
 #content h1 {
@@ -150,8 +150,8 @@ font-size: 1.1em;
 #footer {
 position: relative;
 bottom: 0;
-margin: 80px 6px 6px 6px;
-padding-top: 6px;
+margin-top: 80px;
+padding-top: 20px;
 text-align: right;
 font-size: .7em;
 background-color: white;
