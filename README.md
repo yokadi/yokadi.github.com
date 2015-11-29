@@ -18,12 +18,19 @@ keywords. Keywords can be any word that help you to find and sort your tasks.
 
 ## Dependencies
 
-- Unix or Linux system. Mac OS X and Windows should work but have not been
-  tested yet.
-- Python 3.4.
-- iCalendar module (optional, for Yokadi Daemon only)
-- setproctitle module (optional, for Yokadi Daemon only)
-- SQLAlchemy 0.9.X.
+Yokadi should run on any Unix-like systems. There is also some support for
+Windows but it is not as tested.
+
+Yokadi requires Python 3.4 or more and a few other modules, which you can install with:
+
+    pip install -r requirements.txt
+
+It can also make use of other modules listed in extra-requirements.txt. You can
+install them with:
+
+    pip install -r extra-requirements.txt
+
+These modules are needed for the Yokadi Daemon and for the cryptography features.
 
 ## Quickstart
 
@@ -286,16 +293,17 @@ the `YOKADI_HISTORY` env variable to point to your history file:
 If you want to be automatically reminded of due tasks, you can use the Yokadi
 daemon.
 
-The Yokadi daemon can be launched via desktop autostart services. In KDE, you
-must create a symlink to yokadid (or a shell script that calls it) in `$HOME/.kde/Autostart/`.
+The Yokadi daemon can be launched via desktop autostart services. In most
+desktop environments, you just need to create a symlink to yokadid (or a shell script
+that calls it) in `$HOME/.config/autostart/`:
 
-    ln -s `which yokadid` $HOME/.kde/Autostart/
+    ln -s `which yokadid` $HOME/.config/autostart/
 
 ## Contact
 
-The project is hosted on http://yokadi.github.com.
+The project is hosted on <http://yokadi.github.io>.
 
-All discussion happens on Yokadi mailing-list, hosted by our friends from the
+All discussions happen on Yokadi mailing-list, hosted by our friends from the
 Sequanux LUG. To join, visit
 <http://sequanux.org/cgi-bin/mailman/listinfo/ml-yokadi>.
 
