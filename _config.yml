@@ -1,4 +1,4 @@
 name: Yokadi
 url: http://yokadi.github.com
 
-markdown: redcarpet
+markdown: kramdown
