@@ -3,7 +3,7 @@ layout: home
 title: Welcome to Yokadi website
 ---
 
-Yokadi is a command line oriented, sqlite powered, todo list system.
+Yokadi is a command line oriented, sqlite powered, todo-list.
 
 Yokadi is free software, released under the GPLv3 license.
 
