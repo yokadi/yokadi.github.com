@@ -1,24 +1,43 @@
 ---
 layout: default
 title: Download
-version: "1.0.1"
+version: "1.0.2"
 ---
 ## Latest release
 
-Latest release is v{{ page.version }}. Download it from here:
+Latest release is v{{ page.version }}.
+
+The simplest way to install Yokadi is using pip:
+
+    pip3 install yokadi
+
+Alternatively, you can get source archives:
 
 - [yokadi-{{ page.version }}.tar.bz2](download/yokadi-{{ page.version }}.tar.bz2)
 - [yokadi-{{ page.version }}.zip](download/yokadi-{{ page.version }}.zip)
 
 ## Packages
 
+Some enthusiast users provide packages for their favorite distributions.
+
 - [Debian][debian]
 - [Ubuntu][ubuntu]
-- [Slackware][slackware]
-- [Fedora][rpmfind]
+- [Fedora][fedora]
 - [Arch Linux][arch]
+- [Slackware][slackware]
 - [Frugalware][frugal]
 - [OpenBSD][openbsd]
+
+These packages are not maintained by Yokadi developers. If the package of your distribution needs
+an update, get in touch with the package author.
+
+[debian]: http://packages.debian.org/search?searchon=names&keywords=yokadi
+[ubuntu]: http://packages.ubuntu.com/search?searchon=names&keywords=yokadi
+[fedora]: http://www.rpmfind.net/linux/rpm2html/search.php?query=yokadi
+[arch]: https://aur.archlinux.org/packages/yokadi/
+[slackware]: http://github.com/pprkut/slackbuilds-beta/tree/master/good/yokadi/
+[frugal]: http://frugalware.org/packages/64105
+[openbsd]: http://openports.se/productivity/yokadi
 
 ## Development version
 
@@ -33,10 +52,3 @@ You can also clone the project with [git][] by running:
 [master-zip]: http://github.com/agateau/yokadi/zipball/master
 [master-tar]: http://github.com/agateau/yokadi/tarball/master
 [git]: http://git-scm.com
-[debian]: http://packages.debian.org/search?searchon=names&keywords=yokadi
-[ubuntu]: http://packages.ubuntu.com/search?searchon=names&keywords=yokadi
-[rpmfind]: http://www.rpmfind.net/linux/rpm2html/search.php?query=yokadi
-[openbsd]: http://openports.se/productivity/yokadi
-[arch]: http://aur.archlinux.org/packages.php?ID=23998
-[frugal]: http://frugalware.org/packages/64105
-[slackware]: http://github.com/pprkut/slackbuilds-beta/tree/master/good/yokadi/
