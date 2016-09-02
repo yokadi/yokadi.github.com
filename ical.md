@@ -1,5 +1,5 @@
 ---
-title: Using Manage Yokadi tasks with third party ical aware tool
+title: Managing Yokadi tasks with a third party ical-aware tool
 layout: default
 ---
 
