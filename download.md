@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Download
-version: "1.1.1"
+version: "1.2.0"
 ---
 ## Latest release
 
@@ -13,7 +13,7 @@ The simplest way to install Yokadi is using pip:
 
 Alternatively, you can get source archives:
 
-- [yokadi-{{ page.version }}.tar.bz2](download/yokadi-{{ page.version }}.tar.bz2)
+- [yokadi-{{ page.version }}.tar.gz](download/yokadi-{{ page.version }}.tar.gz)
 - [yokadi-{{ page.version }}.zip](download/yokadi-{{ page.version }}.zip)
 
 ## Packages
