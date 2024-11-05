@@ -16,18 +16,18 @@ layout: default
 """
 
 
-TITLE_RE = re.compile("^#", re.MULTILINE)
+H1_RE = re.compile("^# (.*)\n\n?", re.MULTILINE)
 
 # Matches a Markdown link of the form: [Title](fileName)
-LINK_RE = re.compile("\[(.*)\]\((.*)\)")
+LINK_RE = re.compile(r"\[(.*)\]\((.*)\)")
 
 
 def copyDoc(title, src, dstDir):
     with open(src) as fp:
         content = open(src).read()
-        # Shift titles one level down because our template starts the document
-        # with a level1 title
-        content = TITLE_RE.sub("##", content)
+
+    # Remove H1 title: it's provided by the YAML header
+    content = H1_RE.sub("", content)
 
     with open(os.path.join(dstDir, os.path.basename(src)), "w") as fp:
         fp.write(DOC_HEADER % title)
@@ -36,7 +36,8 @@ def copyDoc(title, src, dstDir):
 
 def main():
     if len(sys.argv) != 3:
-        print("Usage: updatedoc.py <path/to/yokadi/checkout> <path/to/yokadi.github.com/checkout>")
+        print("Usage: updatedoc.py <path/to/yokadi/checkout>"
+              " <path/to/yokadi.github.com/checkout>")
         return 1
 
     srcDir = sys.argv[1]
@@ -61,6 +62,6 @@ def main():
     return 0
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     sys.exit(main())
 # vi: ts=4 sw=4 et
