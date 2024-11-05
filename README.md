@@ -300,4 +300,3 @@ Other people contributed to Yokadi:
 - Jonas Christian Drewsen <jdrewsen@gmail.com>: quarterly recurrence feature
 
 <!-- vim: set ts=4 sw=4 et: -->
-

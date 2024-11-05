@@ -3,7 +3,7 @@ title: Managing Yokadi tasks with a third party ical-aware tool
 layout: default
 ---
 
-## Intro
+## Introduction
 
 This document presents how to use Yokadi with a third party calendar/todolist
 application that supports the ical format (RFC2445).
@@ -29,7 +29,7 @@ If your calendar/todo tool only supports local files:
 * make a simple shell script that downloads the ical file and put it on your
   crontab. You can use wget for that:
 
-    wget -O yokadi.ical http://localhost:8000
+    wget -O yokadi.ical <http://localhost:8000>
 
 Each Yokadi task is defined as an ical VTODO object. Yokadi projects are
 represented as special tasks to which included tasks are related.
@@ -46,11 +46,10 @@ perfect world.
 
 The following tools are known to work properly with Yokadi ical server:
 
-- Kontact/KOrganizer (4.4) from the KDE Software Compilation
+* Kontact/KOrganizer (4.4) from the KDE Software Compilation
 
 If you successfully plugged Yokadi with another calendar/todolist tool, please
 let us now in order to complete this list.
-
 
 ## Some security considerations
 
@@ -68,6 +67,5 @@ restrict who can access to your Yokadi daemon:
 
 You have been warned. That's why listening only to localhost (which is the
 default) is strongly recommended.
-
 
 <!-- vim: set ts=4 sw=4 et: -->

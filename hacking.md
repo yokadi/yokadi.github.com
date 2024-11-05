@@ -3,9 +3,7 @@ title: Hacking on Yokadi
 layout: default
 ---
 
-## Coding style
-
-### Naming
+## Naming
 
 Classes use CamelCase. Functions use mixedCase. Here is an example:
 
@@ -40,7 +38,7 @@ the class they contain.
 
 Internal functions and methods should be prefixed with `_`.
 
-### Spacing
+## Spacing
 
 Indentation is 4 spaces.
 
@@ -54,7 +52,7 @@ One space before and after operators, except in optional arguments.
 
     myFunction(a, verbose=True)
 
-### Import
+## Import
 
 Use one import per line:
 

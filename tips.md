@@ -3,7 +3,7 @@ title: Tips
 layout: default
 ---
 
-## Intro
+## Introduction
 
 This document presents practical advices on how to get the best out of Yokadi.
 
@@ -75,4 +75,3 @@ shortcuts such as:
 - ctrl-w delete last word
 
 <!-- vim: set ts=4 sw=4 et: -->
-

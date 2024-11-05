@@ -3,70 +3,89 @@ title: Release process
 layout: default
 ---
 
-## Release check list
-
-### Introduction
+## Introduction
 
 This doc assumes there is a checkout of yokadi.github.com next to the checkout
 of yokadi.
 
-### In yokadi checkout
+## In yokadi checkout
 
-    export version=<version>
+- [ ] Define version
 
-Check dev is clean
+  ```
+  export version=<version>
+  ```
 
-    git checkout dev
-    git pull
-    git status
+- [ ] Check dev is clean
 
-Update `NEWS` file (add changes, check release date)
+  ```
+  git checkout dev
+  git pull
+  git status
+    ```
 
-Ensure `yokadi/__init__.py` file contains $version
+- [ ] Update `CHANGELOG.md` file (add changes, check release date)
 
-Build archives
+- [ ] Ensure `yokadi/__init__.py` file contains $version
 
-    ./scripts/mkdist.sh ../yokadi.github.com/download
+- [ ] Build archives
 
-Push changes
+  ```
+  ./scripts/mkdist.sh ../yokadi.github.com/download
+  ```
 
-    git push
+- [ ] Push changes
 
-When CI has checked the branch, merge changes in master
+  ```
+  git push
+  ```
 
-    git checkout master
-    git pull
-    git merge dev
-    git push
+- [ ] Open PR to merge in master
 
-Tag the release
+  ```
+  gh pr create --fill
+  ```
 
-    git tag -a $version -m "Releasing $version"
-    git push --tags
+- [ ] Tag the release
 
-### In yokadi.github.com checkout
+  ```
+  git checkout master
+  git pull
+  git tag -a $version -m "Releasing $version"
+  git push origin $version
+  ```
 
-Ensure checkout is up to date
+## In yokadi.github.com checkout
 
-Update documentation
+- [ ] Ensure checkout is up to date
 
-    ./updatedoc.py ../yokadi .
+- [ ] Update documentation
 
-Update version in download page (`download.md`)
+  ```
+  ./updatedoc.py ../yokadi .
+  ```
 
-Write a blog entry in `_posts/`
+- [ ] Update version in download page (`download.md`)
 
-Test it:
+- [ ] Write a blog entry in `_posts/`
 
-    jekyll serve
+- [ ] Test it:
 
-Upload archives on PyPI
+  ```
+  jekyll serve
+  ```
 
-    cd download/
-    twine upload yokadi-<version>.*
+- [ ] Upload archives on PyPI
 
-Publish blog post
+  ```
+  cd download/
+  twine upload yokadi-<version>.*
+  ```
 
-    git add .
-    git commit -m "Releasing $version"
-    git push
+- [ ] Publish blog post
+
+  ```
+  git add .
+  git commit -m "Releasing $version"
+  git push
+  ```

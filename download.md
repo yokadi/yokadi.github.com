@@ -1,20 +1,20 @@
 ---
 layout: default
 title: Download
-version: "1.2.0"
+version: "1.3.0"
 ---
 ## Latest release
 
 Latest release is v{{ page.version }}.
 
-The simplest way to install Yokadi is using pip:
+The simplest way to install Yokadi is using pipx:
 
-    pip3 install yokadi
+    pipx install yokadi
 
-Alternatively, you can get source archives:
+Alternatively, you can download archives:
 
+- [yokadi-{{ page.version }}-py3-none-any.whl](download/yokadi-{{ page.version }}-py3-none-any.whl)
 - [yokadi-{{ page.version }}.tar.gz](download/yokadi-{{ page.version }}.tar.gz)
-- [yokadi-{{ page.version }}.zip](download/yokadi-{{ page.version }}.zip)
 
 ## Packages
 
@@ -31,24 +31,20 @@ Some enthusiast users provide packages for their favorite distributions.
 These packages are not maintained by Yokadi developers. If the package of your distribution needs
 an update, get in touch with the package author.
 
-[debian]: http://packages.debian.org/search?searchon=names&keywords=yokadi
-[ubuntu]: http://packages.ubuntu.com/search?searchon=names&keywords=yokadi
-[fedora]: http://www.rpmfind.net/linux/rpm2html/search.php?query=yokadi
+[debian]: https://packages.debian.org/search?searchon=names&keywords=yokadi
+[ubuntu]: https://packages.ubuntu.com/search?searchon=names&keywords=yokadi
+[fedora]: https://www.rpmfind.net/linux/rpm2html/search.php?query=yokadi
 [arch]: https://aur.archlinux.org/packages/yokadi/
-[slackware]: http://github.com/pprkut/slackbuilds-beta/tree/master/good/yokadi/
-[frugal]: http://frugalware.org/packages/64105
-[openbsd]: http://openports.se/productivity/yokadi
+[slackware]: https://github.com/pprkut/slackbuilds-beta/tree/master/good/yokadi/
+[frugal]: https://frugalware.org/packages/64105
+[openbsd]: https://openports.se/productivity/yokadi
 
 ## Development version
 
-Yokadi is hosted [on GitHub][yokadi-github]. You can download it in either
-[tar][master-tar] or [zip][master-zip] formats.
+Yokadi is hosted [on GitHub][yokadi-github].
 
-You can also clone the project with [git][] by running:
+You can clone the project with git by running:
 
     git clone git://github.com/agateau/yokadi
 
-[yokadi-github]: http://github.com/agateau/yokadi
-[master-zip]: http://github.com/agateau/yokadi/zipball/master
-[master-tar]: http://github.com/agateau/yokadi/tarball/master
-[git]: http://git-scm.com
+[yokadi-github]: https://github.com/agateau/yokadi

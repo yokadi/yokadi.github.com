@@ -3,9 +3,7 @@ title: Handling database updates
 layout: default
 ---
 
-## Database updates
-
-### How the update system works
+## How the update system works
 
 Lets assume current version is x and target version is x+n.
 
@@ -13,7 +11,7 @@ The update process goes like this:
 
 - Copy yokadi.db to work.db
 - for each v between x and x + n - 1:
-     - run `update<v>to<v+1>.update()`
+    - run `update<v>to<v+1>.update()`
 - Create an empty database in recreated.db
 - Fill recreated.db with the content of work.db
 - If we are updating the database in place, rename yokadi.db to yokadi-$date.db
@@ -29,7 +27,7 @@ The recreation steps ensure that:
   'non null')
 - The updated database has the exact same structure as a brand new database.
 
-### Database schema changes
+## Database schema changes
 
 If you want to modify the database schema (adding, removing, changing tables or
 fields). You should:
